@@ -130,7 +130,7 @@ const Pentamatris = () => {
   };
 
   const getTopScores = () => {
-    axios.get('/leaders')
+    axios.get('/api/leaders')
       .then((top5) => {
         settopScores(top5.data);
       })

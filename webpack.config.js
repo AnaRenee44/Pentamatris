@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const webpack = require('webpack');
-require('dotenv').config();
+const webpack = require('webpack');
+
 
 module.exports = {
   mode: 'development',
   devServer: {port: 3000},
+  devtool: 'eval',
   watch: true,
   entry: path.resolve(__dirname, 'client', 'src', 'index.jsx'),
   output: {
