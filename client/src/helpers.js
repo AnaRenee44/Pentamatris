@@ -1,5 +1,6 @@
 const axios = require('axios');
 
+
 export const STAGE_WIDTH = 15;
 export const STAGE_HEIGHT = 25;
 

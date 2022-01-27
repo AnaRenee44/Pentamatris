@@ -1,7 +1,7 @@
 import React from "react";
 
 function Favorites(props) {
-  const { faves } = props;
+  const { faves, onClick } = props;
 
   return (
     <div id='faves-view'>
@@ -9,6 +9,7 @@ function Favorites(props) {
       {/* { faves.map((fave, i) => <div key={i}>{fave}</div>) } */}
       <button
         className='faves-to-revs'
+        onClick={onClick}
       >SEE ALL REVIEWS</button>
     </div>
   );

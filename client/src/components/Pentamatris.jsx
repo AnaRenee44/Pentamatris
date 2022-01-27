@@ -177,8 +177,8 @@ const Pentamatris = () => {
               className='go-to-faves'
               onClick={showFavorites}
             >SEE FAVORITES</button>
-            { showRevs ? <Reviews /> : null }
-            { showFaves ? <Favorites faves={faves}/> : null }
+            { showRevs ? <Reviews onClick={showFavorites} /> : null }
+            { showFaves ? <Favorites faves={faves} onClick={handleRevsClick}/> : null }
           </div>
           )}
           <StyledStart callback={startGame} />

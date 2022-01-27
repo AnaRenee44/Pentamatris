@@ -1,3 +1,6 @@
+const dotenv = require("dotenv")
+const path = require('path');
+dotenv.config({path: path.resolve(__dirname, '../.env')})
 const express = require('express');
 const app = express();
 
@@ -5,7 +8,6 @@ const { router } = require('./requestHandler.js')
 
 const models = require('./models');
 
-const path = require('path');
 const CLIENT_PATH = path.resolve(__dirname, '../dist');
 
 // const init = async () => {
